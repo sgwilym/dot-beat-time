@@ -19,7 +19,8 @@
   },
   "scripts": {
     "build": "pika-pack build",
-    "test": "jest"
+    "test": "jest",
+    "version": "yarn run build"
   },
   "@pika/pack": {
     "pipeline": [
@@ -35,6 +36,10 @@
     ]
   },
   "keywords": [
-    "internet time", "beats", "beat time", ".beat", "decimal time"
+    "internet time",
+    "beats",
+    "beat time",
+    ".beat",
+    "decimal time"
   ]
 }

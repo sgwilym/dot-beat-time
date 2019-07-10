@@ -1,6 +1,6 @@
 {
   "name": "dot-beat-time",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Convert legacy time to decimal internet time, or beats.",
   "main": "src/index.ts",
   "author": "Sam Gwilym <gwilym@me.com>",
@@ -33,7 +33,9 @@
         "@pika/plugin-build-node",
         {}
       ],
-      ["@pika/plugin-bundle-node"],
+      [
+        "@pika/plugin-bundle-node"
+      ],
       [
         "@pika/plugin-build-web"
       ],

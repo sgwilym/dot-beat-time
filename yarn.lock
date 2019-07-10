@@ -287,7 +287,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-syntax-dynamic-import@^7.2.0":
+"@babel/plugin-syntax-dynamic-import@^7.0.0-beta.42", "@babel/plugin-syntax-dynamic-import@^7.2.0":
   version "7.2.0"
   resolved "https://registry.npmjs.org/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.2.0.tgz#69c159ffaf4998122161ad8ebc5e6d1f55df8612"
   integrity sha512-mVxuJ0YroI/h/tbFTPGZR8cv6ai+STMKNBq0f8hFxsxWjl94qqhsb+wXbpNMDPU3cfR1TIsVFzU3nXyZMqyK4w==
@@ -862,6 +862,21 @@
     strip-bom "^3.0.0"
     validate-npm-package-license "^3.0.4"
 
+"@pika/plugin-build-node@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@pika/plugin-build-node/-/plugin-build-node-0.4.0.tgz#8824ce505fb200bf81d9cb40a316b110bd710f6b"
+  integrity sha512-G6h6h8Y+BObwVG5Mq1X0munTXw7/WwNa0GdXp6CblH2L8nc6tPlB5gfFGzH0ej32W3XDKXuLV+G9xkvZ1g+MHg==
+  dependencies:
+    "@babel/core" "^7.0.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@babel/plugin-syntax-import-meta" "^7.2.0"
+    "@babel/preset-env" "^7.2.3"
+    "@pika/types" "^0.4.0"
+    babel-plugin-dynamic-import-node-babel-7 "^2.0.7"
+    builtin-modules "^3.0.0"
+    rollup "^1.1.0"
+    rollup-plugin-babel "^4.3.0"
+
 "@pika/plugin-build-web@^0.4.0":
   version "0.4.0"
   resolved "https://registry.npmjs.org/@pika/plugin-build-web/-/plugin-build-web-0.4.0.tgz#4d4b1ee6907813d016880763790cd747fc2ce7ae"
@@ -875,6 +890,24 @@
     "@types/node" "^10.12.18"
     rollup "^1.1.0"
     rollup-plugin-babel "^4.3.0"
+
+"@pika/plugin-bundle-node@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/@pika/plugin-bundle-node/-/plugin-bundle-node-0.4.0.tgz#c292439729013e25bd9c2939c728bcba07d730b1"
+  integrity sha512-woaROK1CMSZClIlHKz2qRWtcLEBkZm7UFuxt6NgfViyoSURCu/crCFrtQF/5QZBDPFPsjkL9XBog5nfg+tOKcA==
+  dependencies:
+    "@babel/core" "^7.0.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@babel/plugin-syntax-import-meta" "^7.2.0"
+    "@babel/preset-env" "^7.2.3"
+    "@pika/types" "^0.4.0"
+    babel-plugin-dynamic-import-node-babel-7 "^2.0.7"
+    builtin-modules "^3.0.0"
+    rollup "^1.1.0"
+    rollup-plugin-babel "^4.3.0"
+    rollup-plugin-commonjs "^9.2.0"
+    rollup-plugin-json "^3.1.0"
+    rollup-plugin-node-resolve "^4.0.0"
 
 "@pika/plugin-bundle-web@^0.4.0":
   version "0.4.0"
@@ -1273,6 +1306,13 @@ babel-jest@^24.8.0:
     chalk "^2.4.2"
     slash "^2.0.0"
 
+babel-plugin-dynamic-import-node-babel-7@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.npmjs.org/babel-plugin-dynamic-import-node-babel-7/-/babel-plugin-dynamic-import-node-babel-7-2.0.7.tgz#e778a8edb17488b472aa058ec451f1e75da4c0ec"
+  integrity sha512-8DO7mdeczoxi0z1ggb6wS/yWkwM2F9uMPKsVeohK1Ff389JENDfZd+aINwM5r2p66IZGR0rkMrYCr2EyEGrGAQ==
+  dependencies:
+    "@babel/plugin-syntax-dynamic-import" "^7.0.0-beta.42"
+
 babel-plugin-dynamic-import-node@^2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.0.tgz#f00f507bdaa3c3e3ff6e7e5e98d90a7acab96f7f"
@@ -1404,7 +1444,7 @@ builtin-modules@^2.0.0:
   resolved "https://registry.npmjs.org/builtin-modules/-/builtin-modules-2.0.0.tgz#60b7ef5ae6546bd7deefa74b08b62a43a232648e"
   integrity sha512-3U5kUA5VPsRUA3nofm/BXX7GVHKfxz0hOBAPxXrIvHzlDRkQVqEn6yi8QJegxl4LzOHLdvb7XF5dVawa/VVYBg==
 
-builtin-modules@^3.1.0:
+builtin-modules@^3.0.0, builtin-modules@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/builtin-modules/-/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
   integrity sha512-k0KL0aWZuBt2lrxrcASWDfwOLMnodeQjodT/1SxEQAXsHANgo6ZC/VEaSEHCXt7aSTZ4/4H5LKa+tBXmW7Vtvw==

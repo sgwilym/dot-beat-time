@@ -17,7 +17,7 @@ it("prepends zeroes to smaller beat numbers", () => {
   expect(fromDate(midnight)).toBe("@000");
 
   const earlyMorning = new Date(2000, 11, 21, 1, 0);
-  expect(fromDate(earlyMorning)).toBe("@042");
+  expect(fromDate(earlyMorning)).toBe("@041");
 });
 
 it("handles midnight properly", () => {
@@ -26,4 +26,11 @@ it("handles midnight properly", () => {
 
   const nearlyMidnight = new Date(2000, 11, 21, 23, 59);
   expect(fromDate(nearlyMidnight)).toBe("@999");
+});
+
+it("doesn't round up beats when using short formatting", () => {
+  const halfwayThroughABeat = new Date(2000, 11, 21, 0, 0, 45);
+
+  expect(fromDate(halfwayThroughABeat, true)).toBe("@000.52");
+  expect(fromDate(halfwayThroughABeat)).toBe("@000");
 });

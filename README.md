@@ -4,9 +4,9 @@
 
 ## Motivation
 
-The millennium is upon us. The age of the internet arrived long ago. Why are we still coordinating meetings across timezones? Fortunately internet time, which splits the day into 1000 beats and which is consistent across the world, is here to fix all that.
+The millennium is upon us. The age of the internet arrived long ago. Why are we still coordinating meetings across timezones? Fortunately internet time — which splits the day into 1000 beats and which is consistent across the world — is here to fix all that.
 
-Example: you are in central Europe and wish to organise a meeting with your friend in Tokyo during your lunch. Instead of calculating what time it is in Tokyo during lunch, just say "let's talk at @500!".
+Example: you are in central Europe and wish to organise a meeting with your friend in Tokyo during your lunch. Instead of calculating what time it is in Tokyo then, just tell your friend: "let's talk at @500!".
 
 ## Installation
 

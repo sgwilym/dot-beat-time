@@ -27,7 +27,7 @@ If `true` is passed to the second argument, the beat will be fractional e.g. `@2
 
 ### `now`
 
-`fromDate(long?: boolean): string`
+`now(long?: boolean): string`
 
 Outputs the current time as a internet time formatted string e.g. `@650`.
 If `true` is passed to the second argument, the beat will be fractional e.g. `@650.73`.

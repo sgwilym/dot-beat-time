@@ -18,6 +18,7 @@ function wrap(beats: number): number {
 
 export function fromDate(date: Date, long?: boolean): string {
   const seconds =
+    (date.getUTCMilliseconds() / 1000) +
     date.getUTCSeconds() +
     (date.getUTCMinutes() * 60 + (date.getUTCHours() + 1) * 3600);
 

@@ -3,14 +3,7 @@
 function format(beats: number, long: boolean): string {
   const beatsFixed = long ? beats.toFixed(2) : Math.floor(beats).toFixed(0);
 
-  if (beats < 10) {
-    return `@00${beatsFixed}`;
-  } else if (beats < 100) {
-    return `@0${beatsFixed}`;
-  }
-
-  return `@${beatsFixed}`;
-}
+  return `@${beats < 10 ? '00' : beats < 100 ? '0' : ''}${beatsFixed}`;
 
 function wrap(beats: number): number {
   return beats >= 1000 ? Math.abs(beats - 1000) : beats;
